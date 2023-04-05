@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Site</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="code.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+
+	<header>
+		Order
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+				<a onclick="navLink()">Foods</a>
+			</li>
+			<li>
+				<a>Drinks</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="menu-item">
+		<img src="burger.jpg" alt="Burger">
+		<h2>Burger</h2>
+		<p>$10</p>
+		<button onclick="burger.addItem()">Add to Cart</button>
+		<button onclick="burger.removeItem()">Remove from Cart</button>
+	</div>
+	<div class="menu-item">
+		<img src="pizza.jpg" alt="Pizza">
+		<h2>Pizza</h2>
+		<p>$7</p>
+		<button onclick="pizza.addItem()">Add to Cart</button>
+		<button onclick="pizza.removeItem()">Remove from Cart</button>
+	</div>
+	
+	</div>
+</body>
+
+</html>
