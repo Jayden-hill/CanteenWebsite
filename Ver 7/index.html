@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Site</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="code.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+
+	<header>
+		Order
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+				<a onclick="navLink()">Foods</a>
+			</li>
+			<li>
+				<a>Drinks</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="sidebar">
+		<h1>Order here</h1>
+		<form>
+			<label for="orderName">Name:</label><br>
+			<input type="text" id="orderName" name="orderName"><br>
+			<label for="className">Class:</label><br>
+			<input type="text" id="className" name="className"><br>
+			<label for="email">Email:</label><br>
+			<input type="text" id="email" name="email"><br><br>
+		</form>
+			<button type="submit" onclick="order()" id="orderButton">Order</button>
+		<h2>
+			Items: 
+		</h2> 
+		<p id="items">burger 0 <br> pizza 0 <br> chips 0 <br> fish 0 <br> chicken 0 </p>
+		<h2 id="cost">
+			Price: $0
+		</h2>
+	</div>
+	<div class="menu">
+		<div class="menu-item">
+		<div class="container" onclick="burger.addItem()">
+			<img src="burger.png" alt="Burger" class="image">
+			<div class="overlay">
+				<div class="text">Order Burger</div>
+			</div>
+		</div>
+		<button onclick="burger.removeItem()">Remove from Cart</button>
+		<p>$10</p>
+	</div>
+	<div class="menu-item">
+		<div class="container" onclick="pizza.addItem()">
+			<img src="pizza.png" alt="Pizza" class="image">
+			<div class="overlay">
+				<div class="text">Order Pizza</div>
+			</div>
+		</div>
+		<button onclick="pizza.removeItem()">Remove from Cart</button>
+		<p>$7</p>
+	</div>
+	<div class="menu-item">
+		<div class="container" onclick="chips.addItem()">
+			<img src="chips.png" alt="Chips" class="image">
+			<div class="overlay">
+				<div class="text">Order Chips</div>
+			</div>
+		</div>
+		<button onclick="chips.removeItem()">Remove from Cart</button>
+		<p>$6</p>
+	</div>
+	<div class="menu-item">
+		<div class="container" onclick="fish.addItem()">
+			<img src="fish.png" alt="Fish" class="image">
+			<div class="overlay">
+				<div class="text">Order Fish</div>
+			</div>
+		</div>
+		<button onclick="fish.removeItem()">Remove from Cart</button>
+		<p>$7</p>
+	</div>
+	<div class="menu-item">
+		<div class="container" onclick="chicken.addItem()">
+			<img src="chicken.png" alt="Chicken" class="image">
+			<div class="overlay">
+				<div class="text">Order Chicken</div>
+			</div>
+		</div>
+		<button onclick="chicken.removeItem()">Remove from Cart</button>
+		<p>$8</p>
+	</div>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	</div>
+</body>
+
+</html>
